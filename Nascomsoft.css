@@ -73,7 +73,7 @@ h6 {
   background: #333;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 #main-nav .container {
@@ -99,6 +99,7 @@ h6 {
   padding: 0.75rem;
   font-weight: bold;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.5s;
 }
 
 #main-nav ul li a.current {
@@ -146,18 +147,24 @@ h6 {
   font-size: larger;
 }
 
-.btn {
+.btn a {
   display: inline-block;
   border: none;
   background-color: var(--dark-color);
   color: #fff;
   padding: 0.5rem 1.5rem;
+  transition: all 0.5s;
 }
 
-.btn:hover {
+.btn a:hover {
   cursor: pointer;
   background-color: #333;
 }
+
+.btn a:hover {
+  color: #000;
+}
+
 
 /* Footer */
 #main-footer .footer-container {
@@ -257,6 +264,7 @@ textarea {
   padding: 1rem;
   text-align: center;
   color: #fff;
+  transition: all 0.5s;
 }
 
 .submit :hover {
